@@ -335,6 +335,6 @@ Todas as requisições, exceto: Login, Forget. é necessário haver autenticaç�
 
 ## Aprendizados
 
-Recebi a instrução de fazer o Projeto de Seleção da MonteNegro Hub no dia 03/09/2022
+Recebi a instrução de fazer o Projeto de Seleção da MonteNegro no dia 03/09/2022
 e a data de entrega até o dia 08/09/2022, as linguagens eram 
 Next.Js (Front), Nest.Js(Back), MySQL (database), Docker. Com muito esforço e dedicação consegui terminar esta API em Nest.Js com funcionalidades básicas e autenticação JWT. Absorvi muito conhecimento das linguagens recente e tenho em mente utilizadas em todos os projetos apartir de então. 
