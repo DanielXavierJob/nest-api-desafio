@@ -8,14 +8,16 @@ Uma API básica em Nest.JS com consultas e atualizações do banco de dados em M
 
 ## Instalação
 
-Dentro do arquivo app.module.ts, inserir as variaveis de conexão com banco de dados.
+Dentro do arquivo ```app.module.ts```, inserir as variaveis de conexão com banco de dados.
 Conexão padrão:
+```
 host: 192.168.0.16
 database: desafio
 user: root
 password: desafio
+```
 
-Para mudar a conexão do SMTP de envio de E-mail, inserir as variaveis user e pass no arquivo auth.service.ts
+Para mudar a conexão do SMTP de envio de E-mail, inserir as variaveis user e pass no arquivo ```auth.service.ts```
 na função ```forget```
 
 leia sobre como utilizar o NodeMailer em https://community.nodemailer.com/using-gmail
