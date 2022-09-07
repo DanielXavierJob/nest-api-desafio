@@ -14,7 +14,7 @@ export class User {
   @Column({select: false})
   senha: string;
 
-  @Column()
+  @Column({nullable: true})
   senha_reset: string;
 
   @Column()
