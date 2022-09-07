@@ -23,8 +23,8 @@ user: root
 password: desafio
 ```
 
-Para mudar a conexão do SMTP de envio de E-mail, inserir as variaveis user e pass no arquivo ```auth.service.ts```
-na função ```forget```
+Caso queira mudar a conexão do SMTP de envio de E-mail, inserir as variaveis ```user``` e ```pass``` no arquivo ```auth.service.ts```
+na função ```forget```. Por padrão já existe um email configurado para enviar chamado ```noreplydesafio```
 
 leia sobre como utilizar o NodeMailer em https://community.nodemailer.com/using-gmail
 
@@ -44,14 +44,16 @@ Instalação com npm
 ```
 A URL de acesso será http://localhost:3333
 
-Após a instalação, rode a seguinte query no banco de dados:
+Após a instalação, rode a seguinte query no banco de dados para adicionar um novo gestor:
 
 ```INSERT INTO `desafio`.`user`(`id`, `nome`, `email`, `senha`, `senha_reset`, `acesso`, `created_at`, `updated_at`) VALUES (1, 'Gestor Teste', 'gestor@gmail.com', '$2b$10$XPzrp.H0FC.tElRidaH0VOcirFfcF23NL2sWx3GnHFIt3533KfpPa', '', 2, '2022-09-06 20:11:52.979420', '2022-09-07 00:26:03.413112');```
 
+O login e senha para acessar na conta do gestor são:
 ```
 login: gestor@gmail.com
 senha: 123456
 ```
+utilize-os para fazer os testes na aplicação [next-app-desafio](https://github.com/DanielXavierJob/next-app-desafio).
 
 ## Documentação da API
 Todas as requisições, exceto: Login, Forget. é necessário haver autenticação.
