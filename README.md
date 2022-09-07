@@ -8,11 +8,16 @@ Uma API básica em Nest.JS com consultas e atualizações do banco de dados em M
 
 ## Instalação
 
+Instalação do MySQL
+```
+docker run --name mysql-desafio -p 3306:3306 -e MARIADB_ROOT_PASSWORD=desafio -d mariadb:latest
+```
+
 Dentro do arquivo ```app.module.ts```, inserir as variaveis de conexão com banco de dados.
 Conexão padrão:
 ```
-host: 192.168.0.16
-database: desafio
+host: 192.168.0.16 (Mudar para seu IP)
+database: desafio (Criar banco de dados 'desafio')
 user: root
 password: desafio
 ```
