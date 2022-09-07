@@ -186,10 +186,20 @@ Todas as requisições, exceto: Login, Forget. é necessário haver autenticaç�
 | `id`      | `number` | **Obrigatório**. O ID do Usuario|
 
 ## Tasks
-#### Retorna todas as Ordens de serviço
+#### Retorna todas as Ordens de serviço referente ao Usuario logado
 
 ```http
   GET /tasks
+```
+
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `Authorization` | `Bearer` | **Obrigatório**. Chave de autenticação JWT |
+
+#### Retorna todas as Ordens de serviço referente a todos os Usuarios
+
+```http
+  GET /tasks/all
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
@@ -209,7 +219,7 @@ Todas as requisições, exceto: Login, Forget. é necessário haver autenticaç�
 #### Retorna todas as Ordens de serviço completas
 
 ```http
-  GET /tasks/chart
+  GET /all/completed
 ```
 
 | Parâmetro   | Tipo       | Descrição                           |
