@@ -12,6 +12,7 @@ Instalação do MySQL
 ```
 docker run --name mysql-desafio -p 3306:3306 -e MARIADB_ROOT_PASSWORD=desafio -d mariadb:latest
 ```
+Crie um novo banco de dados chamado ```desafio```
 
 Dentro do arquivo ```app.module.ts```, inserir as variaveis de conexão com banco de dados.
 Conexão padrão:
@@ -43,6 +44,14 @@ Instalação com npm
 ```
 A URL de acesso será http://localhost:3333
 
+Após a instalação, rode a seguinte query no banco de dados:
+
+```INSERT INTO `desafio`.`user`(`id`, `nome`, `email`, `senha`, `senha_reset`, `acesso`, `created_at`, `updated_at`) VALUES (1, 'Gestor Teste', 'gestor@gmail.com', '$2b$10$XPzrp.H0FC.tElRidaH0VOcirFfcF23NL2sWx3GnHFIt3533KfpPa', '', 2, '2022-09-06 20:11:52.979420', '2022-09-07 00:26:03.413112');```
+
+```
+login: gestor@gmail.com
+senha: 123456
+```
 
 ## Documentação da API
 Todas as requisições, exceto: Login, Forget. é necessário haver autenticação.
