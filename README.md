@@ -8,13 +8,26 @@ Uma API básica em Nest.JS com consultas e atualizações do banco de dados em M
 
 ## Instalação
 
-Com docker
+Dentro do arquivo app.module.ts, inserir as variaveis de conexão com banco de dados.
+Conexão padrão:
+host: 192.168.0.16
+database: desafio
+user: root
+password: desafio
+
+Para mudar a conexão do SMTP de envio de E-mail, inserir as variaveis user e pass no arquivo auth.service.ts
+na função ```forget```
+
+leia sobre como utilizar o NodeMailer em https://community.nodemailer.com/using-gmail
+
+
+Instalação com docker
 
 ```bash
   docker build -t nest-api-desafio .
   docker run -p 3333:3333 nest-api-desafio
 ```
-Com npm
+Instalação com npm
 
 ```bash
   npm install
@@ -22,6 +35,8 @@ Com npm
   npm start
 ```
 A URL de acesso será http://localhost:3333
+
+
 ## Documentação da API
 Todas as requisições, exceto: Login, Forget. é necessário haver autenticação.
 
